@@ -1914,6 +1914,7 @@ section {
 .sanitiser ul.my-ul li p{
   padding-left: 30px;
   color: white;
+  margin-bottom: 0;
 }
 .sanitiser ul.my-ul li{
   margin-bottom: 25px;
@@ -1935,7 +1936,7 @@ section {
   padding: 40px 30px 40px 80px;
 }
 .sanitiser .content{
-  padding: 60px 60px 0 60px;
+  padding: 60px 60px 40px 60px;
 }
 @media (max-width: 575px) {
   .san_bg{
