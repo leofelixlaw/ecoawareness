@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  font-size: 14px;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #f1775d;
+  color: #009E54;
   text-decoration: none;
 }
 
@@ -26,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 575px) {
+  body {
+    font-size: 13px;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -609,6 +615,20 @@ section {
   color: #0f2f57;
 }
 
+@media (max-width: 575px) {
+  section {
+    padding: 30px 0;
+  }
+  .section-title {
+    padding-bottom: 20px;
+  }
+  .section-title h2::after {
+    width: 70px;
+  }
+  .section-title p {
+    font-size: 24px;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1114,7 +1134,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  padding: 80px 0;
+  padding: 50px 0;
   background: #0b2341;
 }
 
@@ -1965,6 +1985,14 @@ section {
   background-repeat: no-repeat;
   background-size: 100% auto;
   position: relative;
+  min-height: 500px;
+}
+
+@media (max-width: 575px) {
+  .fun_bg{
+    min-height: 380px;
+    background-position: center center;
+  }
 }
 .fun_bg .fun_bg-text{
   padding: 40px;
@@ -2013,8 +2041,68 @@ section {
 .benefits ul li:last-child, .benefits ul li:last-child p{
   margin-bottom: 0;
 }
+.number {
+  color: #009e54;
+  font-size: 50px;
+}
 @media (max-width: 575px) {
+  .number {
+    font-size: 30px;
+  }
   .benefits .content {
     padding: 30px 0;
   }
+}
+
+.ideal-box {
+  text-align: center;
+  padding: 10px 20px;
+}
+.ideal-box .icon{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 80px;
+}
+.ideal-box .icon img{
+  height: 70px;
+  opacity: .8;
+}
+.spec .table td, .spec .table th{
+  padding: 0;line-height: 2.4;
+}
+.spec .table th{
+  color: #009e54;
+}
+@media (max-width: 575px) {
+  .spec .table td{
+    text-align: right;
+  }
+}
+.bg-theme{
+  background-color: #009e54;
+}
+.bg-white{
+  background-color: white;
+}
+.clr-white{
+  color: white;
+}
+.comp-header{
+  text-align: center;
+}
+.comp-header td{
+  vertical-align: middle;
+}
+.comp-header_main{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.comparison .comp-header_main{
+  background-image: url('../img/cir_bg.png');
+  background-repeat: no-repeat;
+  background-position: -67px 180px;
+  background-size: 80% auto;
+}
+.comparison tr:not(.comp-header_main) td{
+  min-width: 100px
 }
