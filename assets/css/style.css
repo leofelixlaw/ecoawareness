@@ -2105,11 +2105,20 @@ section {
   background-size: 80% auto;
 }
 .comparison tr:not(.comp-header_main) td{
-  min-width: 100px
+  width: 180px;
+}
+.comparison .table{
+  margin: 0
 }
 .carousel-move-right {
 
 }
+
+/* @media (min-width: 1200px) {
+  .comparison .comp-header_main td{
+    width: 200px;
+  }
+} */
 .founder-img{
   position: absolute;
   bottom: -20px;
@@ -2176,7 +2185,6 @@ section {
 }
 @media (min-width: 800px) {
   .cert1{
-    margin-top: 230px;
     padding-right: 400px;
     text-align: right;
   }
@@ -2199,7 +2207,6 @@ section {
   .cert1{
     padding-right: 400px;
     text-align: right;
-    margin-top: 150px;
   }
   .cert1 img{
     max-width: 400px;
