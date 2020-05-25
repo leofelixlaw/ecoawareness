@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(4, 12, 21, 0.5);
+  background-color: rgba(4, 12, 21, 0.3);
 }
 
 #hero .carousel-container {
@@ -2105,4 +2105,44 @@ section {
 }
 .comparison tr:not(.comp-header_main) td{
   min-width: 100px
+}
+.carousel-move-right {
+
+}
+.founder-img{
+  position: absolute;
+  bottom: -20px;
+}
+.founder-img img{
+  width: 50%;
+}
+
+.carousel-highlight span {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 10px;
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .carousel-move-right {
+    right: -300px;
+    position: absolute;
+    bottom: 70px;
+  }
+  .founder-img img{
+    width: 500px
+  }
+  .founder-img{
+    right: -70px;
+    bottom: -30px;
+  }
+  .carousel-highlight span {
+    font-size: 60px;
+  }
+}
+.animate__delay-2s{
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
 }
