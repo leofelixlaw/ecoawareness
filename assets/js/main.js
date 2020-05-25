@@ -165,21 +165,21 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  $(".products-carousel").owlCarousel({
     autoplay: true,
     dots: true,
-    loop: true,
+    navigation : false,
+    items: 2,
+    responsiveClass: true,
     responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 2
-      }
+        0:{
+          items: 1
+        },
+        1200:{
+          items: 2
+        }
     }
+    
   });
 
   // Porfolio isotope and filter
