@@ -1899,13 +1899,7 @@ section {
   background-size: 100% auto;
   position: relative;
   min-height: 500px;
-}
-
-@media (max-width: 575px) {
-  .fun_bg {
-    min-height: 380px;
-    background-position: center center;
-  }
+  background-position: center -80px;
 }
 .fun_bg-text {
   padding: 40px;
@@ -2078,7 +2072,7 @@ section {
   width: 100%;
 }
 .products-item img {
-  max-height: 270px;
+  max-height: 280px;
   width: auto !important;
   margin: 0 auto;
 }
@@ -2162,7 +2156,7 @@ section {
   position: relative;
 }
 .contact-image .img-fluid {
-  margin-top: 120px;
+  margin-top: 270px;
 }
 .contact-image-content {
   text-align: center;
@@ -2258,4 +2252,25 @@ section {
   font-weight: normal;
   color: #fff;
   opacity: 1;
+}
+
+@media (min-width: 575px) {
+  .lh2{
+    line-height: 2;
+  }
+}
+@media (max-width: 575px) {
+  .san_bg{
+    background-position: -50px 400px;
+    padding-bottom: 200px;
+  }
+  .mt-5{
+    margin-top: 0 !important;
+  }
+  .footer-links.p0{
+    margin-bottom: 5px !important;
+  }
+  .comp-header{
+    display: none;
+  }
 }
