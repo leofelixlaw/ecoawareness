@@ -596,7 +596,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f6f9fd;
+  background-color: #ffffff;
 }
 
 .section-title {
@@ -2156,12 +2156,16 @@ section {
   position: relative;
 }
 .contact-image .img-fluid {
-  margin-top: 270px;
+  margin-top: 310px;
 }
 .contact-image-content {
   text-align: center;
   flex-direction: column;
   background-color: #009e54;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 .contact-image-content img {
   margin-bottom: 10px;
@@ -2258,6 +2262,9 @@ section {
   .lh2{
     line-height: 2;
   }
+  .contact-image{
+    text-align: center;
+  }
 }
 @media (max-width: 575px) {
   .san_bg{
@@ -2272,5 +2279,8 @@ section {
   }
   .comp-header{
     display: none;
+  }
+  .m-b-xs{
+    margin-bottom: 0;
   }
 }
