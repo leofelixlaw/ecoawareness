@@ -1896,10 +1896,10 @@ section {
 
 .fun_bg {
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   position: relative;
   min-height: 500px;
-  background-position: center -80px;
+  background-position: center center;
 }
 .fun_bg-text {
   padding: 40px;
@@ -2271,8 +2271,12 @@ section {
     background-position: -50px 400px;
     padding-bottom: 200px;
   }
+  .fun_bg {
+    min-height: 440px;
+    background-position: center -80px;
+  }
   .mt-5{
-    margin-top: 0 !important;
+    margin-top: 20px !important;
   }
   .footer-links.p0{
     margin-bottom: 5px !important;
@@ -2283,4 +2287,10 @@ section {
   .m-b-xs{
     margin-bottom: 0;
   }
+  section, .sanitiser .content {
+    padding: 10px 0;
+  } 
+}
+.logo-white{
+  filter: brightness(0) invert(1);
 }
