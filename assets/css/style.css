@@ -565,7 +565,6 @@ h6 {
   }
   #hero .carousel-container {
     text-align: center;
-    top: 74px;
   }
 }
 
@@ -2293,4 +2292,9 @@ section {
 }
 .logo-white{
   filter: brightness(0) invert(1);
+}
+@media (max-width: 330px) {
+  .carousel-item img{
+    width: 140px;
+  }
 }
