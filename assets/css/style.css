@@ -22,6 +22,9 @@ a:hover {
   color: #009e54;
   text-decoration: none;
 }
+.text-underline{
+  text-decoration: underline;
+}
 
 h1,
 h2,
@@ -264,6 +267,15 @@ h6 {
     content: "\ea9d";
   }
 }
+.btn-theme{
+  background: #009e54;
+  border-color: #009e54;
+  color: #fff;
+}
+.btn-theme:hover {
+  background: #008b54;
+  color: #fff;
+}
 
 /* Get Startet Button */
 .get-started-btn {
@@ -271,23 +283,18 @@ h6 {
   background: #009e54;
   color: #fff;
   border-radius: 4px;
-  padding: 8px 25px 9px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
   display: inline-block;
+
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 .get-started-btn:hover {
   background: #008b54;
   color: #fff;
-}
-
-@media (max-width: 768px) {
-  .get-started-btn {
-    margin: 0 48px 0 0;
-    padding: 6px 20px 7px 20px;
-  }
 }
 
 /* Mobile Navigation */
@@ -1125,7 +1132,10 @@ section {
   margin-top: 5px;
   text-align: center;
 }
-
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
 .products .owl-dot {
   display: inline-block;
   margin: 0 5px;
@@ -1138,7 +1148,6 @@ section {
 .products .owl-dot.active {
   background-color: #009e54 !important;
 }
-
 @media (max-width: 767px) {
   .products .products-wrap {
     padding-left: 0;
@@ -2314,4 +2323,35 @@ section {
   padding-left: 0;
   margin-bottom: 0;
   padding-right: 50px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  font-size: 40px;
+  line-height: 0px;
+  height: 40px;
+  width: 40px;
+  padding: 13px !important;
+  position: relative;
+  outline: none
+}
+.owl-nav{
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+@media (max-width: 992px) {
+  .card-deck {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-deck {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-deck {
+    column-count: 4;
+  }
 }

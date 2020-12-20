@@ -226,7 +226,26 @@
     aos_init();
   });
 
-
+  function owlCarousel(name){
+    $(window).on("load", function() {
+      $(name).owlCarousel({
+        loop:true,
+        items: 1,
+        nav:true,
+        singleItem: true,
+        margin: 15,
+        responsive:{
+          0 : { items : 1 },
+          480 : { items : 1 },
+          768 : { items : 2 },
+          1024 : { items :4 }
+        }
+      })
+    });
+  }
+  owlCarousel('.brochure-carousel');
+  owlCarousel('.blog-carousel')
+  owlCarousel('.reseller-carousel')
   // Gets the video src from the data-src on each button
   var $videoSrc;
   $('.video-btn').click(function () {
@@ -243,3 +262,4 @@
   // });
 
 })(jQuery);
+
