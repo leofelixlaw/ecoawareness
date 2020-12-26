@@ -2147,12 +2147,15 @@ section {
     height: 70px;
   }
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .owl-item {
     width: 100% !important;
   }
-}
+} */
 
+.grid-blog-thumb {
+  height: auto !important;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
