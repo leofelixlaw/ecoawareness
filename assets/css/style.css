@@ -1904,7 +1904,7 @@ section {
 
 .fun_bg {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   position: relative;
   min-height: 500px;
   background-position: center center;
