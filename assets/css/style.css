@@ -2334,16 +2334,17 @@ section {
   width: 40px;
   padding: 13px !important;
   position: relative;
-  outline: none
+  outline: none;
+  color: #009e54;
+}
+.owl-carousel .owl-nav button.disabled{
+  opacity: .5;
+  cursor: not-allowed;
 }
 .owl-nav{
   position: absolute;
   top: -70px;
   right: 0;
-}
-.owl-carousel .owl-nav button{
-  opacity: .5;
-  cursor: not-allowed;
 }
 @media (max-width: 992px) {
   .card-deck {
