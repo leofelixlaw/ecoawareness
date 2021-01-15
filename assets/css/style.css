@@ -2341,6 +2341,10 @@ section {
   top: -70px;
   right: 0;
 }
+.owl-carousel .owl-nav button{
+  opacity: .5;
+  cursor: not-allowed;
+}
 @media (max-width: 992px) {
   .card-deck {
     column-count: 3;

@@ -229,7 +229,7 @@
   function owlCarousel(name){
     $(window).on("load", function() {
       $(name).owlCarousel({
-        loop:true,
+        loop: false,
         items: 1,
         nav:true,
         singleItem: true,
